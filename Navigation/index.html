@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="image/photo.jpg" alt="">
+            </div>
+            <i class='bx bx-menu' id="btn"></i>       
+         </div>
+         <ul class="nav_list">
+             <li>
+                 <a href="#" >
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="search...">
+                 </a>
+                 <span class="tooltip">search</span>
+             </li>
+
+             <li>
+                <a href="#" >
+                   <i class='bx bx-home' ></i>
+                   <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+
+            <li>
+                <a href="#" >
+                   <i class='bx bx-user' ></i>
+                   <span class="links_name">About </span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+
+            <li>
+                <a href="#" >
+                   <i class='bx bx-briefcase' ></i>
+                   <span class="links_name">Skill</span>
+                </a>
+                <span class="tooltip">Skill</span>
+            </li>
+
+            <li>
+                <a href="#" >
+                   <i class='bx bx-layer' ></i>
+                   <span class="links_name">Work</span>
+                </a>
+                <span class="tooltip">Work</span>
+            </li>
+         </ul>
+    </div>
+    <div class="home_content">
+        <div class="container">
+            <div class="text">
+                <img src="image/iconbali.png" alt="">
+            </div>
+            <h1 class="display-4">A Better way to Travel to Silalahi</h1>
+            <p class="head">Cheapest and Easier</p>
+            <a href="" class="btn btn-outline btn-lg">About Us</a>
+            <a href="" class="btn btn-outline btn-bg">reservation</a>
+       
+    </div>
+</div>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
+</body>
+</html>
